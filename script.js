@@ -99,7 +99,6 @@ const notFoundImageSRC = "assets/images/notfound.png";
 
 document.querySelectorAll('img').forEach(img => img.onerror = function() {
     this.src = notFoundImageSRC
-    return;
     ;
 }
 )
