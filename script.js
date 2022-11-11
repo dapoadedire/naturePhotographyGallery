@@ -66,14 +66,14 @@ const createImage = (image) => {
     return div;
 }
 
-console.dir(createImage(images[0]));
+
 
 images.forEach(image => {
     container.appendChild(createImage(image));
 }
 )
 
-console.log(container);
+
 
 
 document.querySelectorAll('img').forEach(img => img.onerror = function() {
