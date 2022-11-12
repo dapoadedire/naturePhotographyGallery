@@ -1,5 +1,5 @@
 import { images } from "./images.js";
-console.log(images);
+
 
 
 const notFoundImageSRC = "assets/images/notfound.png";
