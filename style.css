@@ -174,7 +174,8 @@ footer ul li {
 
 footer a {
   color: #fff;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
 }
 
 footer a:hover {
@@ -184,6 +185,7 @@ footer a:hover {
 figcaption {
   text-align: center;
   font-size: 1rem;
+  color: rgba(255, 255, 255, 0.774);
   font-weight: 300;
   margin-block: 1.5em 0;
   border: 1px solid rgb(85, 85, 85);

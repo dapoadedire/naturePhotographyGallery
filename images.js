@@ -2,11 +2,11 @@ export const images = [
    
     {
         src: "./assets/images/img1.JPG",
-        alt: "image2",
+        alt: "Banana/plantain tree.",
     },
     {
         src: "./assets/images/img2.JPG",
-        alt: "image3",
+        alt: "Tall palm trees.",
     },
     {
         src: "./assets/images/img3.JPG",
@@ -26,7 +26,7 @@ export const images = [
     },
     {
         src: "./assets/images/img7.JPG",
-        alt: "image8",
+        alt: "Cloudy sky.",
     },
     {
         src: "./assets/images/img8.JPG",
