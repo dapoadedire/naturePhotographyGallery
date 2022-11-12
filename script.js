@@ -134,7 +134,12 @@ cardTotalElem.innerHTML = cardLimit;
 
 const checkDevice = () => {
     const width = window.innerWidth;
-    return 5 ? width < 768 : 3 ? width < 992 : 4 ? width < 1200 : 6 ? width < 1400 : 8;
+    if (width < 768) {
+        return 4;
+    } else if (width < 992) {
+        return 6;
+    }
+     return 8;
 };
 
 

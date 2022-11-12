@@ -215,3 +215,24 @@ figcaption {
 .card-count, .card-total{
   text-decoration: underline;
 }
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  }
+  .card-actions {
+    flex-direction: column;
+  }
+  #load-more {
+    margin-top: 1em;
+    width: 60%;
+  }
+  #showing {
+    margin-top: 1em;
+    width: 60%;
+    text-align: center;
+  }
+
+}
+  
