@@ -1,106 +1,7 @@
-const images = [
-    {
-        id: 1,
-        src: "https://images.unsplash.com/photo-1556740732-21e6bd3ab135?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
-        alt: "image1",
-    },
-    {
-        id: 2,
-        src: "https://images.unsplash.com/photo-1556740732-21e6bd3ab135?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
-        alt: "image2",
-    },
-    {
-        id: 3,
-        src: "https://images.unsplash.com/photo-1556740732-21e6bd3ab135?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
-        alt: "image3",
-    },
-    {
-        id: 4,
-        src: "https://images.unsplash.com/photo-1556740732-21e6bd3ab135?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
-        alt: "image4",
-    },
-    {
-        id: 5,
-        src: "https://images.unsplash.com/photo-1556740732-21e6bd3ab135?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
-        alt: "image5",
-    },
-    {
-        id: 6,
-        src: "https://images.unsplash.com/photo-1556740732-21e6bd3ab135?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
-        alt: "image6",
-    },
-    {
-        id: 7,
-        src: "https://images.unsplash.com/photo-1556740732-21e6bd3ab135?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
-        alt: "image7",
-    },
-    {
-        id: 8,
-        src: "https://images.unsplash.com/photo-1556740732-21e6bd3ab135?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
-        alt: "image8",
-    },
-    {
-        id: 9,
-        src: "https://images.unsplash.com/photo-1556740732-21e6bd3ab135?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
-        alt: "image9",
-    },
-    {
-        id: 10,
-        src: "https://images.unsplash.com/photo-1556740732-21e6bd3ab135?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
-        alt: "image10",
-    },
-    {
-        id: 1,
-        src: "https://images.unsplash.com/photo-1556740732-21e6bd3ab135?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
-        alt: "image1",
-    },
-    {
-        id: 2,
-        src: "https://images.unsplash.com/photo-1556740732-21e6bd3ab135?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
-        alt: "image2",
-    },
-    {
-        id: 3,
-        src: "https://images.unsplash.com/photo-1556740732-21e6bd3ab135?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
-        alt: "image3",
-    },
-    {
-        id: 4,
-        src: "https://images.unsplash.com/photo-1556740732-21e6bd3ab135?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
-        alt: "image4",
-    },
-    {
-        id: 5,
-        src: "https://images.unsplash.com/photo-1556740732-21e6bd3ab135?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
-        alt: "image5",
-    },
-    {
-        id: 6,
-        src: "https://images.unsplash.com/photo-1556740732-21e6bd3ab135?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
-        alt: "image6",
-    },
-    {
-        id: 7,
-        src: "https://images.unsplash.com/photo-1556740732-21e6bd3ab135?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
-        alt: "image7",
-    },
-    {
-        id: 8,
-        src: "https://images.unsplash.com/photo-1556740732-21e6bd3ab135?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
-        alt: "image8",
-    },
-    {
-        id: 9,
-        src: "https://images.unsplash.com/photo-1556740732-21e6bd3ab135?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
-        alt: "image9",
-    },
-    {
-        id: 10,
-        src: "https://images.unsplash.com/photo-1556740732-21e6bd3ab135?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
-        alt: "image10",
-    },
+import { images } from "./images.js";
+console.log(images);
 
-];
+
 const notFoundImageSRC = "assets/images/notfound.png";
 const cardContainer = document.querySelector(".container");
 const loadMoreButton = document.querySelector("#load-more");
@@ -151,6 +52,7 @@ const handleButtonStatus = () => {
     if (pageCount === currentPage) {
         loadMoreButton.classList.add("disabled");
         loadMoreButton.setAttribute("disabled", true);
+        loadMoreButton.innerHTML = "No more images";
     }
 };
 
