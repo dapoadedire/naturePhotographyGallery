@@ -166,7 +166,7 @@ const addCards = (pageIndex) => {
     handleButtonStatus();
     const startRange = (pageIndex - 1) * cardIncrease;
     const endRange =
-        currentPage == pageCount ? cardLimit : pageIndex * cardIncrease;
+        currentPage === pageCount ? cardLimit : pageIndex * cardIncrease;
     cardCountElem.innerHTML = endRange;
     for (let i = startRange + 1; i <= endRange; i++) {
         createImage(images[i - 1]);
