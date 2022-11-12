@@ -130,7 +130,23 @@ const cardLimit = images.length;
 cardTotalElem.innerHTML = cardLimit;
 
 
-const cardIncrease = 6;
+
+
+const checkDevice = () => {
+    const width = window.innerWidth;
+    if (width < 768) {
+        return 3;
+    } else if (width < 992) {
+        return 4;
+    } else if (width < 1200) {
+        return 6;
+    } else {
+        return 8;
+    }
+};
+
+
+const cardIncrease = checkDevice();
 const pageCount = Math.ceil(cardLimit / cardIncrease);
 let currentPage = 1;
 

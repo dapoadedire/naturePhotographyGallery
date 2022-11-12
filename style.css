@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@300&display=swap');
 /* Reset.css starts*/
 
 /* Box sizing rules */
@@ -80,7 +81,8 @@ select {
 /* Global styles starts */
 
 body {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Source Sans Pro", sans-serif; */
+  font-family: 'Playfair Display', serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -88,11 +90,17 @@ body {
   background-color: rgb(0, 0, 0);
 }
 
+main{
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
   grid-template-rows: auto;
   grid-gap: 2rem;
   row-gap: 3rem;
@@ -113,8 +121,8 @@ header {
 }
 
 header h1 {
-  font-size: clamp(1.5rem, 6vw, 2rem);
-  font-weight: 600;
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
@@ -200,10 +208,10 @@ figcaption {
   font-weight: 300;
   border: 1px solid #fff;
   padding: 1em;
+  word-spacing: 1px;
+  opacity: 0.7;
 } 
 
-
-.active {
-  margin-bottom: 2px;
-  border-bottom: 12px solid #fff;
+.card-count, .card-total{
+  text-decoration: underline;
 }
