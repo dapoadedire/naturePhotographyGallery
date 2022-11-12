@@ -1,45 +1,23 @@
 export const images = [
+    // q_auto,f_auto
    
     {
-        src: "./assets/images/img1.JPG",
-        alt: "Banana/plantain tree.",
-    },
-    {
-        src: "./assets/images/img2.JPG",
+        src: "https://res.cloudinary.com/dapoadedire/image/upload/q_auto,f_auto/v1668264057/nature-photos/img9_nr3elp.jpg",
         alt: "Tall palm trees.",
     },
     {
-        src: "./assets/images/img3.JPG",
-        alt: "image4",
+        src: "https://res.cloudinary.com/dapoadedire/image/upload/q_auto,f_auto/v1668264029/nature-photos/img1_ydjt5t.jpg",
+        alt: "Banana/plantain tree.",
     },
     {
-        src: "./assets/images/img4.JPG",
-        alt: "image5",
+        src: "https://res.cloudinary.com/dapoadedire/image/upload/q_auto,f_auto/v1668264033/nature-photos/img10_e65lod.jpg",
+        alt: "Field.",
     },
     {
-        src: "./assets/images/img5.JPG",
-        alt: "image6",
-    },
-    {
-        src: "./assets/images/img6.JPG",
-        alt: "image7",
-    },
-    {
-        src: "./assets/images/img7.JPG",
+        src: "https://res.cloudinary.com/dapoadedire/image/upload/q_auto,f_auto/v1668264031/nature-photos/img7_bo6wnn.jpg",
         alt: "Cloudy sky.",
     },
-    {
-        src: "./assets/images/img8.JPG",
-        alt: "image9",
-    },
-    {
-        src: "./assets/images/img9.JPG",
-        alt: "image10",
-    },
-    {
-        src: "./assets/images/img10.JPG",
-        alt: "image11",
-    },
-    
+ 
+  
 
 ]

@@ -17,6 +17,7 @@ const createImage = (image) => {
     const img = document.createElement("img");
     figcaption.textContent = image.alt;
     img.src = image.src;
+    // img.src = `https://res.cloudinary.com/dapoadedire/image/fetch/${image.src}`;
     img.alt = image.alt;
     figure.appendChild(img);
     figure.appendChild(figcaption);
@@ -93,3 +94,8 @@ window.onload = function () {
     });
 };
 
+
+
+
+
+// https://res.cloudinary.com/dapoadedire/image/upload/v1668264029/nature-photos/img1_ydjt5t.jpg
