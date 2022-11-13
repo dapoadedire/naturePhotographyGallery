@@ -152,10 +152,11 @@ footer {
   margin-top: 1em;
   padding-top: 2em;
   border-top: 1px solid rgb(85, 85, 85);
+  font-size: 0.9rem;
 }
 
 footer p {
-  font-size: 1rem;
+  
   font-weight: 400;
   margin-bottom: 0.5rem;
 }
@@ -189,7 +190,7 @@ figcaption {
   font-weight: 300;
   margin-block: 1.5em 0;
   border: 1px solid rgb(85, 85, 85);
-  padding: 1em;
+  padding: clamp(0.5rem, 3vw, 1rem);
 }
 
 
@@ -206,9 +207,9 @@ figcaption {
 }
  
 #load-more {
-  padding: 16px;
+  padding: clamp(0.4rem, 2vw, 1rem);
   background-color: white;
-  border: none;
+  border: 1px solid #fff;
   cursor: pointer;
   transition: all 200ms ease-in-out;
   font-size: 1rem;
@@ -231,10 +232,11 @@ figcaption {
 #showing {
   font-size: 1rem;
   font-weight: 700;
-  border: 1px solid #fff;
-  padding: 1em;
+  /* border: 1px solid #fff; */
+  padding: clamp(0.4rem, 2vw, 1rem);
   word-spacing: 1px;
   opacity: 0.7;
+  height: 50px;
 } 
 
 .card-count, .card-total{
@@ -245,10 +247,6 @@ figcaption {
 @media screen and (max-width: 768px) {
   .container {
     grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
-  }
-  .card-actions {
-    flex-direction: column;
-    
   }
   #load-more {
     margin-top: 1em;
@@ -261,6 +259,7 @@ figcaption {
     width: 60%;
     text-align: center;
     font-size: 0.8em;
+    margin-right: 20%;
   }
 
 }
